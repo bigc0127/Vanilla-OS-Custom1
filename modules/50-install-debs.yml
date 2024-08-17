@@ -2,6 +2,4 @@ name: install-debs
 type: shell
 commands:
   - bash /deb-pkgs/install-debs.sh
-  - bash /deb-pkgs/proton.sh
-  - bash /deb-pkgs/windscribe.sh
   - rm -rf /deb-pkgs
