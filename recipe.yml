@@ -1,5 +1,5 @@
-name: Cneedling-Custom1
-id: cc1 
+name: linuxpatriot1776-custom
+id: lp76-c 
 stages:
 - id: build
   base: ghcr.io/vanilla-os/desktop:main # Optionally, Replace this image URL with a different one i.e. nvidia:main, etc
