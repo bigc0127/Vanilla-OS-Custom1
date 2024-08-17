@@ -4,5 +4,4 @@ commands:
   - bash /deb-pkgs/install-debs.sh
   - bash /deb-pkgs/proton.sh
   - bash /deb-pkgs/windscribe.sh
-  - bash /deb-pkgs/mullvad.sh
   - rm -rf /deb-pkgs
