@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: linuxpatriot1776-cuztom
+  CUSTOM_IMAGE_NAME: linuxpatriot1776-custom
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
