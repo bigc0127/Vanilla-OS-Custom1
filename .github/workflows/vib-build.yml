@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  CUSTOM_IMAGE_NAME: cneedling-custom1
+  CUSTOM_IMAGE_NAME: linuxpatriot1776-cuztom
   BUILDX_NO_DEFAULT_ATTESTATIONS: 1
 
 jobs:
