@@ -22,12 +22,6 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
-  - name: proton-vpn
-    type: apt
-    source: https://repo.protonvpn.com/debian/dists/stable/main/binary-all/
-    packages:
-    - protonvpn-stable-release
-    - proton-vpn-gnome-desktop
   - name: install-packages 
     type: apt
     source:
