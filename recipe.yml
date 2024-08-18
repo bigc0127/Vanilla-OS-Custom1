@@ -42,6 +42,14 @@ stages:
       packages:
       - vim
       - mullvad-vpn
+      - gnome-tweaks
+      - chrome-gnome-shell
+      - libayatana-appindicator3-1
+      - gir1.2-ayatanaappindicator3-0.1
+      - gnome-shell-extension-appindicator
+      - fastfetch
+      - eza
+      - python3-pyclipper
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
     includes:
