@@ -22,14 +22,6 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
-  - name: mullvad-vpn
-        type: shell
-        commands:
-          - >-
-            curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
-          - >-
-            echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --print-architecture )] https://repository.mullvad.net/deb/stable $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/mullvad.list
-          - apt-get update
   - name: proton-vpn
         type: apt
         source: https://repo.protonvpn.com/debian/dists/stable/main/binary-all/
@@ -41,7 +33,6 @@ stages:
     source:
       packages:
       - vim
-      - mullvad-vpn
       - gnome-tweaks
       - chrome-gnome-shell
       - libayatana-appindicator3-1
