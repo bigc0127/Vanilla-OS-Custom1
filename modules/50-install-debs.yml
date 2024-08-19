@@ -2,4 +2,5 @@ name: install-debs
 type: shell
 commands:
   - bash /deb-pkgs/install-debs.sh
+  - bash /deb-pkgs/Proton.sh
   - rm -rf /deb-pkgs
