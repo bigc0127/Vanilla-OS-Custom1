@@ -35,6 +35,8 @@ stages:
       - fastfetch
       - eza
       - python3-pyclipper
+      - libnss3-dev
+      - libasound-dev
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
     includes:
