@@ -191,7 +191,27 @@ stages:
       - python3-yarl
       - python3-zipp
       - udev
-
+      
+  - name: install-deps-windscribe 
+    type: apt
+    source:
+      packages:
+      - iptables
+      - libnetfilter-conntrack3
+      - libnftnl11
+      - libxcb-cursor0
+      - libxcb-image0
+      - libxcb-render-util0
+      - libxcb-xkb1
+      - net-tools
+      - libip6tc2
+      - libnfnetlink0
+      - libopengl0
+      - libxcb-icccm4
+      - libxcb-keysyms1
+      - libxcb-util1
+      - libxkbcommon-x11-0
+      
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
     includes:
