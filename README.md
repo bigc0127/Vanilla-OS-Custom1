@@ -1,5 +1,22 @@
+## What is special about this custom image?
 
-## Use this custom image
+This image is built with the following pkgs added in (thus making it custom)
+
+- Mullvad VPN (installed and working with a few extra tweaks by you)
+- Proton VPN (installed and working out the box)
+- Windscribe VPN (Not yet, but I will figure it out eventually)
+- vim
+- gnome-tweaks
+- chrome-gnome-shell
+- libayatana-appindicator3-1
+- gir1.2-ayatanaappindicator3-0.1
+- gnome-shell-extension-appindicator
+- fastfetch
+- eza
+- python3-pyclipper
+
+
+## How to use this custom image
 
 - Edit the configuration file with the command: `abroot config-editor`.
 - Change the "name" entry from something like `vanilla-os/desktop` to `bigc0127/linuxpatriot1776-custom`.  [**Note**: All characters must be in lowercase.]
