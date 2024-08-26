@@ -191,8 +191,28 @@ stages:
       - python3-yarl
       - python3-zipp
       - udev
+
+  - name: install-deps-windscribe-cli
+    type: apt
+    source:
+      packages:
+      - apt-transport-https
+      - gnupg
+
+  - name: windscribe-key-add
+    type: shell
+    commands:
+    - apt-key adv --keyserver keyserver.ubuntu.com --recv-key FDC247B7
+    - echo 'deb https://repo.windscribe.com/ubuntu bionic main' | tee /etc/apt/sources.list.d/windscribe-repo.list 
+    - apt-get -y update
+ 
+  - name: install-windscribe-cli 
+    type: apt
+    source:
+      packages:
+      - iptables
       
- # - name: install-deps-windscribe 
+ # - name: install-windscribe 
   #  type: apt
    # source:
     #  packages:
