@@ -1,4 +1,4 @@
-name: linuxpatriot1776-custom
+sname: linuxpatriot1776-custom
 id: lp76-c 
 stages:
 - id: build
@@ -118,7 +118,27 @@ stages:
     type: shell
     commands:
     - wget -O includes.container/deb-pkgs/windscribe.deb https://github.com/Windscribe/Desktop-App/releases/download/v2.10.8/windscribe_2.10.8_guinea_pig_amd64.deb
-      
+   
+  - name: install-windscribe-deps
+    type: apt
+    source:
+      packages:
+      - iptables
+      - libnetfilter-conntrack3
+      - libnftnl11
+      - libxcb-cursor0
+      - libxcb-image0
+      - libxcb-render-util0
+      - libxcb-xkb1
+      - net-tools
+      - libip6tc2
+      - libnfnetlink0
+      - libopengl0
+      - libxcb-icccm4
+      - libxcb-keysyms1
+      - libxcb-util1
+      - libxkbcommon-x11-0    
+  
   - name: install-deps-proton 
     type: apt
     source:
@@ -207,26 +227,6 @@ stages:
     #source:
     # packages:
     # - iptables
-      
- - name: install-windscribe 
-    type: apt
-    source:
-      packages:
-      - iptables
-      - libnetfilter-conntrack3
-      - libnftnl11
-      - libxcb-cursor0
-      - libxcb-image0
-      - libxcb-render-util0
-      - libxcb-xkb1
-      - net-tools
-      - libip6tc2
-      - libnfnetlink0
-      - libopengl0
-      - libxcb-icccm4
-      - libxcb-keysyms1
-      - libxcb-util1
-      - libxkbcommon-x11-0
       
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
