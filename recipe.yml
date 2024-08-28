@@ -197,10 +197,10 @@ stages:
       # - apt-transport-https
       #- gnupg
 
-    - name: windscribe-pkg-download
-       type: shell
-      commands:
-      - wget -O includes.container/deb-pkgs/windscribe.deb https://github.com/Windscribe/Desktop-App/releases/download/v2.10.8/windscribe_2.10.8_guinea_pig_amd64.deb
+ - name: windscribe-pkg-download
+    type: shell
+    commands:
+    - wget -O includes.container/deb-pkgs/windscribe.deb https://github.com/Windscribe/Desktop-App/releases/download/v2.10.8/windscribe_2.10.8_guinea_pig_amd64.deb
  
     #  - name: install-windscribe-cli 
     #type: apt
