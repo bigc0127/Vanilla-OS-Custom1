@@ -18,7 +18,7 @@ This image is built with the following pkgs added in (thus making it custom)
 
 - Edit the configuration file with the command: `abroot config-editor`.
 - Change the "name" entry from `vanilla-os/desktop` to `bigc0127/linuxpatriot1776-proton`.  [**Note**: All characters must be in lowercase.]
-- Change the `tag` entry from `main` to `ProtonVPN`.
+- Change the `tag` entry from `main` to `protonvpn`.
 - Now, Run `abroot upgrade` to switch to my custom image.
 
 ## Suggestions
