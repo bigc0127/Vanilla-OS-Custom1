@@ -3,8 +3,6 @@
 This image is built with the following pkgs added in (thus making it custom)
 
 - Mullvad VPN (installed and working with a few extra tweaks by you)
-- Proton VPN (installed and working out of the box)
-- Windscribe VPN (Not yet, but I will figure it out eventually)
 - vim
 - gnome-tweaks
 - chrome-gnome-shell
