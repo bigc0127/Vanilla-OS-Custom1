@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+# Set non-interactive frontend
+export DEBIAN_FRONTEND=noninteractive
 for file in /deb-pkgs/*; do
     if [ ! -f "$file" ]; then
         continue
