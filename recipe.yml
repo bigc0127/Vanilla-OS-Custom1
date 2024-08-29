@@ -135,7 +135,7 @@ stages:
        - libxkbcommon-x11-0
   - name: install-windscribe
     type: apt
-    source: /deb-pkgs/
+    source:
       packages:
       -96-windscribe-cli-2.11.8.deb  
     ignore_errors: true
