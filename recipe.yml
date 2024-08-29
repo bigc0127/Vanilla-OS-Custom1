@@ -133,6 +133,7 @@ stages:
        - libxcb-keysyms1
        - libxcb-util1
        - libxkbcommon-x11-0
+      ignore_errors: true
        
   - name: install-windscribe
     type: apt
