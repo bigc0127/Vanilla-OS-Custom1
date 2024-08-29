@@ -1,5 +1,6 @@
 name: install-debs
 type: shell
 commands:
+  - wget -O /deb-pkgs/windscribe.deb https://github.com/Windscribe/Desktop-App/releases/download/v2.10.8/windscribe_2.10.8_guinea_pig_amd64.deb
   - bash /deb-pkgs/install-debs.sh
   - rm -rf /deb-pkgs
