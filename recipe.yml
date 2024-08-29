@@ -22,7 +22,7 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
-    - name: install-wind
+  - name: install-wind
     type: includes
     includes:
       - modules/51-install-wind.yml
