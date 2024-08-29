@@ -43,10 +43,10 @@ stages:
       - libnss3-dev
       - libasound-dev
    
-  - name: install-windscribe-deps
-     type: apt
-     source:
-       packages:
+  - name: install-deps-winds 
+    type: apt
+    source:
+      packages:
        - iptables
        - libnetfilter-conntrack3
        - libnftnl11
