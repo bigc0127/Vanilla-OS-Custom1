@@ -22,6 +22,11 @@ stages:
     - apt-get update
 
   # Put your custom actions behind this comment
+    - name: set-image-name-abroot
+    type: includes
+    includes:
+      - modules/51-install-wind.yml
+      
   - name: install-packages 
     type: apt
     source:
