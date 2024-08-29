@@ -1,4 +1,5 @@
 #!/bin/bash
+alias 'systemctl start'= echo
 set -e
 # Set non-interactive frontend
 export DEBIAN_FRONTEND=noninteractive
