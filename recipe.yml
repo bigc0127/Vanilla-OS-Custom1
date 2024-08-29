@@ -115,9 +115,9 @@ stages:
       - libasound-dev
   
   - name: Download Windscribe Deb
-    type: download
-      url: https://windscribe.com/install/desktop/linux_deb_x64/windscribe-cli_2.11.5_amd64.deb
-      path: includes.container/deb-pkgs/
+    type: shell
+      commands:
+      - wget -O includes.container/deb-pkgs/windscribe.deb https://github.com/Windscribe/Desktop-App/releases/download/v2.10.8/windscribe_2.10.8_guinea_pig_amd64.deb
    
   - name: install-windscribe-deps
     type: apt
