@@ -115,24 +115,29 @@ stages:
       - libasound-dev
    
   - name: install-windscribe-deps
+     type: apt
+     source:
+       packages:
+       - iptables
+       - libnetfilter-conntrack3
+       - libnftnl11
+       - libxcb-cursor0
+       - libxcb-image0
+       - libxcb-render-util0
+       - libxcb-xkb1
+       - net-tools
+       - libip6tc2
+       - libnfnetlink0
+       - libopengl0
+       - libxcb-icccm4
+       - libxcb-keysyms1
+       - libxcb-util1
+       - libxkbcommon-x11-0
+  - name: install-windscribe
     type: apt
-    source:
+    source: /deb-pkgs/
       packages:
-      - iptables
-      - libnetfilter-conntrack3
-      - libnftnl11
-      - libxcb-cursor0
-      - libxcb-image0
-      - libxcb-render-util0
-      - libxcb-xkb1
-      - net-tools
-      - libip6tc2
-      - libnfnetlink0
-      - libopengl0
-      - libxcb-icccm4
-      - libxcb-keysyms1
-      - libxcb-util1
-      - libxkbcommon-x11-0
+      -96-windscribe-cli-2.11.8.deb  
     ignore_errors: true
   
   - name: install-deps-proton 
@@ -211,19 +216,6 @@ stages:
       - python3-zipp
       - udev
 
-      #- name: install-deps-windscribe-cli
-      # type: apt
-      #source:
-      #packages:
-      # - apt-transport-https
-      #- gnupg
- 
-    #  - name: install-windscribe-cli 
-    #type: apt
-    #source:
-    # packages:
-    # - iptables
-      
   - name: example-modules # Sample module demonstrating importing local and remote modules
     type: includes
     includes:
